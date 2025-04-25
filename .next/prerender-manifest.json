@@ -1,6 +1,30 @@
 {
   "version": 4,
   "routes": {
+    "/contact": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/contact",
+      "dataRoute": "/contact.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/dashboard": {
       "experimentalBypassFor": [
         {
@@ -25,7 +49,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/dmca": {
+    "/documentation": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -38,8 +62,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/dmca",
-      "dataRoute": "/dmca.rsc",
+      "srcRoute": "/documentation",
+      "dataRoute": "/documentation.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -160,30 +184,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/plugins",
       "dataRoute": "/plugins.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/contact": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/contact",
-      "dataRoute": "/contact.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -385,7 +385,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/documentation": {
+    "/dmca": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -398,8 +398,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/documentation",
-      "dataRoute": "/documentation.rsc",
+      "srcRoute": "/dmca",
+      "dataRoute": "/dmca.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -413,8 +413,8 @@
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "98d3af1be6f2a16b2613c3b292c18ebc",
-    "previewModeSigningKey": "97483bda2f3a6cabc60c69951490e3ebce11ab2bba070dafd483f9edef48f5c6",
-    "previewModeEncryptionKey": "c90420afe634234dbbe749af8edb0e015ad17e999723fd0a6841aecb0127c7fe"
+    "previewModeId": "a53d24d0cc9ad1e4aa11bd9f1f75eae9",
+    "previewModeSigningKey": "f18e43ef8b3c7a8d8ec052c27c440bcb41b8d41132fdab33b4d92aaf5b7f0484",
+    "previewModeEncryptionKey": "d941ecdaeb7df7c8219bccfda40829dc40bfee579feec265dcb969f6ef69a89a"
   }
 }
