@@ -1,0 +1,22 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/contact/page": "/contact",
+  "/dashboard/page": "/dashboard",
+  "/dmca/page": "/dmca",
+  "/documentation/page": "/documentation",
+  "/faq/page": "/faq",
+  "/hosting/page": "/hosting",
+  "/login/page": "/login",
+  "/page": "/",
+  "/plugins/[id]/page": "/plugins/[id]",
+  "/plugins/page": "/plugins",
+  "/privacy/page": "/privacy",
+  "/register/page": "/register",
+  "/search/page": "/search",
+  "/terms/page": "/terms",
+  "/themes/[id]/page": "/themes/[id]",
+  "/themes/page": "/themes",
+  "/vpn/page": "/vpn",
+  "/app/page": "/app",
+  "/pricing/page": "/pricing"
+}
