@@ -1,0 +1,79 @@
+# WordPress Marketplace Theme - Installation Guide
+
+## Prerequisites
+- WordPress installation (version 5.0 or higher)
+- cPanel access
+- FTP access or File Manager access in cPanel
+
+## Installation Steps
+
+### Method 1: Using WordPress Admin Panel (Easiest)
+
+1. Log in to your WordPress admin panel
+2. Go to Appearance > Themes
+3. Click "Add New" at the top of the page
+4. Click "Upload Theme"
+5. Click "Choose File" and select the wordpress-marketplace-theme.zip file
+6. Click "Install Now"
+7. After installation completes, click "Activate"
+8. The theme is now installed and activated!
+
+### Method 2: Using cPanel File Manager
+
+1. Log in to your cPanel account
+2. Open File Manager
+3. Navigate to your WordPress installation directory (usually public_html or a subdirectory)
+4. Go to wp-content/themes/
+5. Click "Upload" at the top of the page
+6. Upload the wordpress-marketplace-theme.zip file
+7. Right-click on the uploaded ZIP file and select "Extract"
+8. Extract the files to the current directory
+9. Log in to your WordPress admin panel
+10. Go to Appearance > Themes
+11. Find "WordPress Marketplace" and click "Activate"
+
+### Method 3: Using FTP
+
+1. Extract the wordpress-marketplace-theme.zip file on your computer
+2. Connect to your server using an FTP client
+3. Navigate to your WordPress installation directory
+4. Go to wp-content/themes/
+5. Upload the entire "wordpress-marketplace" folder
+6. Log in to your WordPress admin panel
+7. Go to Appearance > Themes
+8. Find "WordPress Marketplace" and click "Activate"
+
+## After Installation
+
+1. Flush permalinks by going to Settings > Permalinks and clicking "Save Changes"
+2. Create the necessary pages for your marketplace:
+   - Home
+   - Plugins
+   - Themes
+   - Pricing
+   - Contact
+   - Hosting
+   - VPN
+   - DMCA
+   - FAQ
+   - Documentation
+   - Privacy
+   - Terms
+   - Login
+   - Register
+   - Dashboard
+   - Search
+
+3. Configure your theme settings under Appearance > Customize
+
+## Troubleshooting
+
+If you encounter any issues during installation:
+
+1. Make sure your WordPress installation is up to date
+2. Check that your server meets the minimum requirements (PHP 7.4+)
+3. Ensure you have proper permissions to install themes
+4. Try deactivating all plugins temporarily to rule out plugin conflicts
+5. If using a caching plugin, clear the cache after installation
+
+For additional support, please contact support@1wpplugin.com

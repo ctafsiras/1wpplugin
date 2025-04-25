@@ -1,0 +1,97 @@
+/* Logo container and animated text styles */
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.logo-wrapper {
+  width: 600px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.text-gradient {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: linear-gradient(to right, #4f46e5, #06b6d4, #10b981, #4f46e5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 300% 100%;
+}
+
+.text-animate {
+  animation: text-shimmer 4s infinite ease-in-out;
+  text-shadow: 0 0 10px rgba(79, 70, 229, 0.5);
+  letter-spacing: 1px;
+}
+
+@keyframes text-shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Make sure the rating section has a dark background */
+.rating-section {
+  background-color: #1e293b;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.rating-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rating-score {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.rating-stars {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  color: #fbbf24;
+}
+
+.rating-reviews {
+  font-size: 14px;
+  color: #cbd5e1;
+  margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .logo-wrapper {
+    width: 300px;
+    height: 150px;
+  }
+
+  .text-gradient {
+    font-size: 24px;
+  }
+}
